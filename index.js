@@ -5,8 +5,6 @@ const port = 3000;
 const HenrikDevValorantAPI = require("unofficial-valorant-api");
 const vapi = new HenrikDevValorantAPI();
 
-const fs = require("fs");
-
 app.get("/", async (req, res) => {
   const mmr_data = await vapi.getMMR({
     version: "v1",
